@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестирование post messages в payment widget'a</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id='form'>
+        <input id='input' type="text" value="http://localhost:8080/?serviceId=25&kpId=819101">
+        <button id='button' type='submit'>Submit</button>
+    </div>
+    <div id="content">
+        <iframe id='iframe' src="http://localhost:8080/?serviceId=25&kpId=819101" frameborder="0"></iframe>
+        <div id='post-messages'>
+            Post Messages:<br>
+            --------------
+        </div>
+    </div>
+
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>

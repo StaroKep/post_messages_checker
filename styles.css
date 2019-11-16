@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    min-width: 800px;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+iframe {
+    width: 800px;
+    height: 700px;
+    border: 1px solid grey;
+    margin: 10px auto auto;
+}
+
+#form {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+}
+
+#input {
+    font-size: 13px;
+    font-weight: 500;
+    box-sizing: border-box;
+    width: calc(100% - 100px);
+    height: 30px;
+    line-height: 30px;
+    border: solid grey;
+    border-width: 1px 0 1px 1px;
+    box-shadow: none;
+    padding: 0px 10px 0 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#input:focus {
+    border: 1px solid lightblue;
+}
+
+#button {
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 100px;
+    font-size: 13px;
+    height: 30px;
+    line-height: 26px;
+    border: 1px solid grey;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#button:hover {
+    background-color: lightgray;
+}
+
+#button:active {
+    color: white;
+    background-color: grey;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#post-messages {
+    height: 702px;
+    flex: 1 1 auto;
+    margin-top: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
