@@ -1,0 +1,17 @@
+:root {
+    --white: rgb(250, 250, 250);
+    --white-90: rgba(250, 250, 250, 0.9);
+    --white-80: rgba(250, 250, 250, 0.8);
+    --white-70: rgba(250, 250, 250, 0.7);
+    --white-60: rgba(250, 250, 250, 0.6);
+    --white-50: rgba(250, 250, 250, 0.5);
+    --white-40: rgba(250, 250, 250, 0.4);
+    --white-30: rgba(250, 250, 250, 0.3);
+    --white-20: rgba(250, 250, 250, 0.2);
+    --white-10: rgba(250, 250, 250, 0.1);
+
+    --border-color: rgba(0, 0, 0, 0.25);
+    --border-color-active: rgba(60, 0, 255, 0.5);
+    --shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    --backdrop-filter: saturate(180%) blur(10px);
+}
