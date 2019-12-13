@@ -1,1 +1,1 @@
-export {default as AddressBar} from './AddressBar';
+export { default as AddressBar } from "./AddressBar";

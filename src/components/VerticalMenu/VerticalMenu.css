@@ -1,0 +1,11 @@
+.root {
+  width: 50px;
+  height: 100%;
+  position: fixed;
+  box-shadow: var(--shadow-left);
+  border-left: 1px solid var(--border-color);
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: var(--white);
+}
