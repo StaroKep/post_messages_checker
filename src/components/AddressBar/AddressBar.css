@@ -4,13 +4,21 @@
   width: calc(100% - 50px);
   min-width: 1280px;
   height: 50px;
-  box-shadow: var(--shadow-right);
   border-bottom: 1px solid var(--border-color);
   background-color: var(--white);
   /** backdrop-filter: var(--backdrop-filter); */
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  box-sizing: border-box;
+
+}
+
+@media (max-width: 1279px) {
+  .root {
+    width: 100%;
+    padding-right: 50px;
+  }
 }
 
 .caption {

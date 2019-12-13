@@ -38,16 +38,22 @@ class Root extends Component {
   }
 
   render() {
+    const { iframeSrc } = this.state;
+
     const addressBarProps = {
       setIframeSrc: this.setIframeSrc,
-      iframeSrc: this.state.iframeSrc
+      iframeSrc,
+    };
+
+    const verticalMenuProps = {
+      iframeSrc,
     };
 
     return (
       <div>
-        <VerticalMenu />
+        <VerticalMenu {...verticalMenuProps} />
         <AddressBar {...addressBarProps} />
-        <Iframe src={this.state.iframeSrc} />
+        <Iframe src={iframeSrc} />
         <Footer />
       </div>
     );

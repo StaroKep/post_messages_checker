@@ -4,7 +4,6 @@
   width: calc(100% - 50px);
   min-width: 1280px;
   height: 50px;
-  box-shadow: var(--shadow-top);
   border-top: 1px solid var(--border-color);
   background-color: var(--white);
   /** backdrop-filter: var(--backdrop-filter); */
@@ -13,11 +12,20 @@
   justify-content: flex-start;
   padding: 0 15px;
   font-size: 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1279px) {
+  .root {
+    width: 100%;
+    padding-right: 50px;
+  }
 }
 
 .link {
   text-decoration: underline;
   color: black;
+  transition: .1s;
 }
 
 .link:hover {
