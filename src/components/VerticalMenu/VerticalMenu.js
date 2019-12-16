@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import cn from "classnames/bind";
 
-import {OpenWidgetLink} from "src/components/VerticalMenu/parts/OpenWidgetLink";
+import { OpenWidgetLink } from "src/components/VerticalMenu/parts/OpenWidgetLink";
 
 import * as styles from "./VerticalMenu.css";
-import {PostMessages} from "src/components/VerticalMenu/parts/PostMessages";
+import { PostMessages } from "src/components/VerticalMenu/parts/PostMessages";
 
 const cx = cn.bind(styles);
 
@@ -14,17 +14,22 @@ class VerticalMenu extends Component {
   }
 
   render() {
-    const { iframeSrc } = this.props;
-    console.log(iframeSrc);
+    const { iframeSrc, dialogProps } = this.props;
 
     const openWidgetLinkProps = {
-      link: iframeSrc,
+      link: iframeSrc
     };
 
-    return <div className={cx("root")}>
-      <OpenWidgetLink { ...openWidgetLinkProps } />
-      <PostMessages />
-    </div>;
+    const postMessagesProps = {
+      dialogProps
+    };
+
+    return (
+      <div className={cx("root")}>
+        <OpenWidgetLink {...openWidgetLinkProps} />
+        <PostMessages {...postMessagesProps} />
+      </div>
+    );
   }
 }
 

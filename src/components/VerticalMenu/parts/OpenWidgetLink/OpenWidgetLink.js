@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import cn from "classnames/bind";
 
-import {ShareIcon} from "src/icons";
+import { ShareIcon } from "src/icons";
 
 import * as styles from "./OpenWidgetLink.css";
 
@@ -15,11 +15,18 @@ class OpenWidgetLink extends Component {
   render() {
     const { link } = this.props;
 
-    return <div className={cx("root")}>
-      <a className={cx('link')} target="_blank"  href={link} title="Открыть виджет в новом окне">
-        <ShareIcon className={cx('icon')} />
-      </a>
-    </div>;
+    return (
+      <div className={cx("root")}>
+        <a
+          className={cx("link")}
+          target="_blank"
+          href={link}
+          title="Открыть виджет в новом окне"
+        >
+          <ShareIcon className={cx("icon")} />
+        </a>
+      </div>
+    );
   }
 }
 

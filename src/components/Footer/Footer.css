@@ -25,7 +25,7 @@
 .link {
   text-decoration: underline;
   color: black;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .link:hover {

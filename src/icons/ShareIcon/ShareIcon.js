@@ -1,6 +1,6 @@
-import React  from 'react';
+import React from "react";
 
-const ShareIcon = (props) => {
+const ShareIcon = props => {
   return (
     <svg
       version="1.1"

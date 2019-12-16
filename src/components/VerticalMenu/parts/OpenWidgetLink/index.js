@@ -1,1 +1,1 @@
-export { default as OpenWidgetLink} from './OpenWidgetLink';
+export { default as OpenWidgetLink } from "./OpenWidgetLink";

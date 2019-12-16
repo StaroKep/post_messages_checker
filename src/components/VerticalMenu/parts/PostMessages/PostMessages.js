@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import cn from "classnames/bind";
 
-import {MessagesIcon} from "src/icons";
+import { MessagesIcon } from "src/icons";
 
-import {PostMessagesService} from "./helpers";
+import { PostMessagesService } from "./helpers";
 
 import * as styles from "./PostMessages.css";
 
@@ -14,15 +14,30 @@ class PostMessages extends Component {
     super(props);
 
     this.state = {
-      postMessages: [],
+      postMessages: []
     };
     new PostMessagesService();
   }
 
   render() {
-    return <div className={cx("root")} title="Посмотреть post messages">
-      <MessagesIcon classNaem={cx('icon')}/>
-    </div>;
+    const { dialogProps } = this.props;
+    const { hidden, showDialog, hideDialog } = dialogProps;
+
+    debugger;
+
+    const onClick = () => {
+      hidden ? showDialog() : hideDialog();
+    };
+
+    return (
+      <button
+        onClick={onClick}
+        className={cx("root")}
+        title="Посмотреть post messages"
+      >
+        <MessagesIcon classNaem={cx("icon")} />
+      </button>
+    );
   }
 }
 
